@@ -110,12 +110,15 @@ body{
 
 /* menu */
 
+nav{
+    padding: 0 !important;
+}
+
 .menu{
     background-color: #fff;
 }
 
 .menu .container{
-    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,11 +134,32 @@ body{
 
 .navbar ul li{
     margin: 0 5px;
+    padding: 25px 0;
 }
 
-.navbar ul li:hover a{
+.navbar ul li:hover .nav-link{
     color: #d21919 !important;
 }
+
+.navbar ul li:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu{
+    background-color: #292929 !important;
+    padding: 10px 0 !important;
+    border-radius: unset !important;
+}
+
+.dropdown-item{
+    color: #c9c9c9 !important;
+    padding: 10px !important;
+}
+
+.dropdown-item:hover{
+    background-color: #c9c9c911 !important;
+}
+
 
 .search{
     flex-grow: 1;
